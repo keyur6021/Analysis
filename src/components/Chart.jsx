@@ -8,7 +8,11 @@ import highcharts3d from "highcharts/highcharts-3d";
 // HC_more(Highcharts);
 highcharts3d(Highcharts);
 
-function Donutchart({ title, chartTitle }) {
+function Donutchart({ title, chartTitle, chartData }) {
+    const data = chartData?.map((data)=> {
+        return [data.category, data.totalExpense.yearly]
+    })
+    console.log('chartData===>', data);
 
     const options = {
         title: {
@@ -61,18 +65,19 @@ function Donutchart({ title, chartTitle }) {
         },
         series: [{
             name: 'Medals',
-            data: [
-                ['Norway', 16],
-                ['Germany', 12],
-                ['USA', 8],
-                ['Sweden', 8],
-                ['Netherlands', 8],
-                ['ROC', 6],
-                ['Austria', 7],
-                ['Canada', 4],
-                ['Japan', 3]
+            // data: [
+            //     ['Norway', 16],
+            //     ['Germany', 12],
+            //     ['USA', 8],
+            //     ['Sweden', 8],
+            //     ['Netherlands', 8],
+            //     ['ROC', 6],
+            //     ['Austria', 7],
+            //     ['Canada', 4],
+            //     ['Japan', 3]
 
-            ]
+            // ]
+            data
         }],
 
         credits: {

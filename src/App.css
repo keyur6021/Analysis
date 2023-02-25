@@ -15,3 +15,28 @@
   padding: 5px 5px !important;
   margin: 3px;
 }
+.edit-btn{
+  padding: 5px !important;
+  background-color: #17a2b8 !important;
+}
+
+.delete-btn{
+  padding: 5px !important;
+  background-color: #dc3545 !important;
+}
+
+.edit-btn{
+  padding: 5px !important;
+  background-color: #17a2b8 !important;
+}
+
+.delete-btn{
+  padding: 5px !important;
+  background-color: #dc3545 !important;
+}
+
+.save-btn{
+  padding: 5px !important;
+  background-color: #28a745 !important;
+  margin-right: 3px;
+}

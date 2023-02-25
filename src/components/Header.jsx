@@ -8,7 +8,7 @@ import UpdateModel from './UpdateModel';
 import * as _ from 'lodash';
 import Donutchart from './Chart';
 
-const Header = () => {
+const Header = ({chartData}) => {
 
     const [show, setShow] = useState(false);
     const [budgetName, setBudgetName] = useState('');
@@ -44,7 +44,7 @@ const Header = () => {
                     />
                 </div>
                 <div>
-                    <Donutchart title='Summary of Monthly Budgetd Expenses' chartTitle={chartTitle} />
+                    <Donutchart chartData={chartData} title='Summary of Monthly Budgetd Expenses' chartTitle={chartTitle} />
                 </div>
             </div>
         </React.Fragment>
