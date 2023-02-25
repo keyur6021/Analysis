@@ -4,8 +4,8 @@ import Table from 'react-bootstrap/Table';
 const CustomTable = () => {
     return (
         <div>
-    <Table striped bordered hover>
-      <thead>
+    <Table bordered hover>
+      <thead className='table-primary'>
         <tr>
           <th>#</th>
           <th>First Name</th>
