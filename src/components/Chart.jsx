@@ -2,7 +2,7 @@ import React from 'react'
 
 const Chart = () => {
     return (
-        <div>Chart newdsd</div>
+        <div>Chart New</div>
     )
 }
 
