@@ -8,8 +8,8 @@ const Dashboard = () => {
         <React.Fragment>
             <div className='w-50 shadow-lg p-3 mb-5 bg-white rounded'>
                 <Header />
-                <Chart />
-                <Table />
+                {/* <Chart /> */}
+                {/* <Table /> */}
             </div>
         </React.Fragment>
     )
